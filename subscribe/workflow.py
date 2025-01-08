@@ -68,10 +68,10 @@ class TaskConfig:
     disable_insecure: bool = False
 
     # 覆盖subconverter默认exclude规则
-    ignorede: bool = False
+    ignorede: bool = True
 
     # 是否允许特殊协议
-    special_protocols: bool = False
+    special_protocols: bool = True
 
     # 对于具有邮箱域名白名单且需要验证码的情况，是否使用 Gmail 别名邮箱尝试，为 True 时表示不使用
     rigid: bool = True
