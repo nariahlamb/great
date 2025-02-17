@@ -23,10 +23,10 @@ GITHUB_API = "https://api.github.com"
 GITHUB_CONTENT_API = "https://raw.githubusercontent.com"
 
 # proxies file path
-PROXY_FILES = ["aggregate/data/proxies.yaml", "data/proxies.yaml", "data/clash.yaml"]
+PROXY_FILES = ["grate/data/proxies.yaml", "data/proxies.yaml", "data/clash.yaml"]
 
 # subscribes file path
-SUBSCRIBE_FILES = ["aggregate/data/subscribes.txt", "data/subscribes.txt"]
+SUBSCRIBE_FILES = ["grate/data/subscribes.txt", "data/subscribes.txt"]
 
 # default branch
 DEFAULT_BRANCH = "main"
