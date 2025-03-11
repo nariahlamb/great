@@ -63,8 +63,10 @@ class TaskConfig:
         "enable": True,               # 是否启用ChatGPT连通性测试
         "test_url": "https://api.openai.com/v1/chat/completions",  # 测试连接的URL
         "timeout": 5,                 # 连接超时时间(秒)
-        "include": "美|美国|US|USA|United States|日本|JP|Japan|新加坡|SG|Singapore",  # 要测试的节点关键词
-        "exclude": ""                 # 要排除的节点关键词
+        "include": "美|美国|US|USA|United States|日本|JP|Japan|新加坡|SG|Singapore|欧洲|EU|Europe|英国|UK|德国|DE|法国|FR",  # 要测试的节点关键词
+        "exclude": "高倍率|高延迟",     # 要排除的节点关键词
+        "mark_prefix": "🤖",           # 解锁ChatGPT的节点添加的前缀标识
+        "mark_suffix": "ChatGPT"      # 解锁ChatGPT的节点添加的后缀标识
     })
 
     # 是否检测节点存活状态
