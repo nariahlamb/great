@@ -52,7 +52,7 @@ class TaskConfig:
     coupon: str = ""
 
     # 节点重命名规则
-    rename: str = ""
+    rename: str = "r"^(.*?)(家宽|住宅|高速|极速|中转|→|中继|奈飞|NF|netflix|解锁|chatgpt|IEPL|IPLC|原生)?(\d+倍)?(.*)$""
 
     # 节点排除规则
     exclude: str = "台湾|香港|港|台|🇹🇼|🇭🇰|已用|元|分割|公益|限速|流量|过期|剩余|时间|Expire|Traffic|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Author|CTG|🇷🇺|🇨🇳|RU|俄罗斯|中国"
