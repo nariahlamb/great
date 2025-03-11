@@ -59,14 +59,7 @@ class TaskConfig:
     include: str = "🇦🇹|🇧🇪|🇧🇬|🇨🇾|🇨🇿|🇩🇰|🇪🇪|🇫🇮|🇫🇷|🇩🇪|🇬🇷|🇭🇺|🇮🇪|🇮🇹|🇱🇻|🇱🇹|🇱🇺|🇲🇹|🇳🇱|🇵🇱|🇵🇹|🇷🇴|🇸🇰|🇸🇮|🇪🇸|🇸🇪|🇺🇸|🇬🇧|🇫🇷|🇩🇪|🇰🇷|🇯🇵|🇸🇬"
 
    # ChatGPT连通性测试节点过滤规则
-    chatgpt: dict = {
-        "enable": True,              # 是否启用ChatGPT连通性测试
-        "regions": ["US", "JP", "SG", "EU"],  # 优先测试的地区
-        "timeout": 10,               # 连接超时时间(秒)
-        "include": ["美国", "日本", "新加坡", "欧洲"],  # 要包含测试的节点名称关键词
-        "exclude": ["高倍率", "高延迟"],  # 要排除测试的节点名称关键词
-        "test_url": "https://api.openai.com/v1/chat/completions"  # ChatGPT API测试地址
-    }
+    chatgpt: dict = None
 
     # 是否检测节点存活状态
     liveness: bool = True
